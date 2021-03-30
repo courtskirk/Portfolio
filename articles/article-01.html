@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Random Color Generator</title>
+        <link rel="icon" href="assets/artlogo.png"/>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../styles/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/bootstrap-icons.css">
+    </head>
+    <body>
+
+        <div class='container'>
+            <h1 class='display-1 mt-4'> Random Color Generator </h1>
+            <p>Courtney Harris 3/25/2021</p>
+            <hr>
+            <h2><b>WHAT IS IT</b></h2>
+            <p>
+                This web application will randomly choose and display a color, as well as its RGB value. There are, so far, 4 color groups to choose from. To get your color click on the button of which color group you'd like a random color from.
+                This application is a client-side browser app with JavaScript. It renders graphics with the Canvas API & DOM API. It is Event-driven and actively controlled by the end user.
+            </p>
+            <hr>
+            <h2><b>LOGIC</b></h2>
+            <p>
+                 When the user clicks a color group label/button it triggers the event handler to set a specific key. That key is then used as a parameter for a javascript function. This function assigns 2 numbers to global variables called min and max. The numbers assigned correspond to classes in the styles.css file that set the RGB of each color option. The min and max are then fed into a function in the View.js file. This function calls a getRandomIntInclusive function and assigns the int returned to a variable. That variable is then fed into the html viewport to change the class of the canvas to that specific class number. Thus that random color is displayed in the canvas.
+
+                 There is also a method in View.js that has the RGB data of all the colors and displays that as well, using the same variable that the getRandomIntInclusive function returns.
+            </p>
+            <hr>
+            <h2><b>INSPIRATION</b></h2>
+            <p>
+                This application was inspired by a TikTok I saw. In the TikTok an artist had drawn a picture and was preparing to color it but decided to make it fun. They turned on red LED lights in there room so that all of their markers were just various shades of red. They preceded to color the drawing, not knowing which exact colors they were choosing. After finishing, they turned back on white lights and got to be surprised by how their drawing turned out.
+
+                I thought this was a cool and fun idea, and thought to make this application for artists who work digitally rather than physically with markers.
+            </p>
+        </div>
+
+        <!--  Bootstrap Bundle with Popper -->
+        <script src="../scripts/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

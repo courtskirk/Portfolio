@@ -1,0 +1,125 @@
+body {
+	background-color: rgb(0,0,0);
+}
+
+.bg-dark{
+	background-color: rgb(0,0,0);
+}
+.bg-green{
+	background-color:rgb(50,205,50);
+}
+
+
+.container{
+	display: grid;
+	grid-template-columns: [leftside]50%[lefttoright-rightstart] 50%[rightend];
+	grid-template-rows: [headstart]25%[headend-contentstart]65%[contentend-footstart]auto[footend];
+}
+
+.item-introtext{
+	grid-column: <leftside> / span<lefttoright-rightstart>;
+	grid-row: <headend-contentstart> / span<contentend-footstart>;
+
+}
+
+.item-introimage{
+	grid-column: <lefttoright-rightstart> / span<rightend>;
+	grid-row: <<headend-contentstart> / span<contentend-footstart>;
+
+}
+
+.banner {
+	background-image: url('../assets/coding.jpg');
+  	background-attachment: fixed
+  	opacity: 0.75;
+}
+.banner2 {
+	background-image: url('../assets/rainbow.jpg');
+  	background-attachment: fixed
+}
+
+/*grid with 2 columns and auto rows*/
+.grid-2col{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	justify-content: center;
+}
+
+.left {
+	display: flex;
+	justify-content: flex-start;
+}
+.right{
+	display: flex;
+	justify-content: flex-end;
+}
+.center{
+	display: flex;
+	justify-content: center;
+}
+.border{
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
+}
+.padding{
+	padding: 20px;
+}
+.text-padding{
+	padding: 20px;
+}
+.margin{
+	margin: 10px;
+}
+
+.center-vertical{
+  flex-grow: 2;
+  margin: 45%;
+  width: 150%;
+  height: 100%;
+  border: 3px solid white;
+  padding: 20px;
+  font-size: 35px;
+  z-index: 1;
+}
+.full{
+	width: 100%;
+}
+
+.lightblue{
+	background-color: rgb(50,168,255);
+}
+.bg-indigo{
+	background-color: indigo;
+}
+.background-gradient{
+	background-image: linear-gradient(to right, deepskyblue, fuchsia, pink, orange, lawngreen);
+}
+
+.bg-image{
+     object-fit: cover;
+}
+
+.size-increase{
+	font-size: 25px;
+}
+
+.ibm{
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.marker{
+	font-family: 'Permanent Marker', cursive;
+}
+.navfont{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+}
+.titlefont{
+	font-family: 'IM Fell French Canon SC', serif;
+}
+.charmonman-font{
+	font-family: 'Charmonman', cursive;
+	font-size: 25px;
+}
